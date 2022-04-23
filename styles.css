@@ -5,7 +5,7 @@
 
 body {
   font-family: Poppins, sans-serif;
-  background-color: #e5e5e5;
+  background-color: #7f8cff;
 }
 
 .header-container {
@@ -73,4 +73,219 @@ h3 {
 .social-icons ul li {
   display: inline-block;
   padding-right: 20px;
+}
+
+.works-section {
+  display: grid;
+  row-gap: 88px;
+  width: 375px;
+  height: 2788px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+}
+
+.subsection-one {
+  height: 552px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  width: 327px;
+  border-radius: 2%;
+}
+
+.subsection-two {
+  height: 552px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #fff;
+  width: 327px;
+  border-radius: 2%;
+}
+
+.subsection-three {
+  height: 552px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-left: 16px;
+  background-color: #fff;
+  width: 327px;
+  border-radius: 2%;
+}
+
+.subsection-four {
+  height: 552px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #fff;
+  width: 327px;
+  border-radius: 2%;
+}
+
+.about-section {
+  background-image: url("images/Base-about-my-self.svg");
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 1263px;
+  margin: 0 auto;
+  padding-top: 114px;
+}
+
+.about-section h2 {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 327px;
+  height: 101px;
+  font-size: 40px;
+}
+
+.skills {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.skills h4 {
+  font-size: 20px;
+  margin-top: 36px;
+  margin-bottom: 23px;
+}
+
+.btn-1 {
+  border: none;
+  border-radius: 8px;
+  font-style: normal;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  color: #6070ff;
+  background-color: #ebebff;
+}
+
+.btn-2 {
+  border: none;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  color: #6070ff;
+  background-color: #ebebff;
+}
+
+.btn-3 {
+    border: none;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    color: #6070ff;
+    background-color: #ebebff;
+  }
+
+.btn-4 {
+    border-color: #396df2;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #396df2;
+    font-size: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  margin-right: 12px;
+  margin-bottom: 28px;
+}
+
+.btn-5 {
+  border-color: #396df2;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #396df2;
+  font-size: 17px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 12px;
+  margin-left: 24px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.btn {
+  color: #ebebff;
+  margin-top: 12px;
+  font-size: 12px;
+}
+  
+.big-btn {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+  .paragraph {
+  margin-top: 20px;
+  height: 76px;
+  width: 295px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.subsection-two h3 {
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 32px;
+  color: #173b4d;
+  font-weight: 700;
+  width: 295px;
+}
+
+.subsection-one h3 {
+  width: 295px;
+  height: 36px;
+  font-size: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #173b4d;
+  font-weight: 700;
+}
+
+.subsection-three h3 {
+  width: 295px;
+  height: 36px;
+  font-size: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #173b4d;
+  font-weight: 700;
+}
+
+.subsection-four h3{
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 32px;
+  color: #173b4d;
+  font-weight: 700;
+  width: 295px;
 }
