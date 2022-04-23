@@ -2,8 +2,10 @@
 
 ## Description of the project.
 
-The purpose of this project is to set the mobile version skeleton of the personal
+1. The purpose of this project is to set the mobile version skeleton of the personal
 portfolio project.
+
+2. Add "works" section and "about myself" section to the project.
 
 ## Built With : 
 Major languages : HTML5, CSS3
