@@ -335,6 +335,8 @@ h3 {
 }
 
 .footer-section {
+  display: flex;
+  flex-direction: column;
   background-image: url("images/Contact-me.svg");
   background-repeat: no-repeat;
   width: 375px;
