@@ -7,6 +7,8 @@ portfolio project.
 
 2. Add "works" section and "about myself" section to the project.
 
+3. Add "footer" section containing the "contact form" to the project.
+
 ## Built With : 
 Major languages : HTML5, CSS3
 Frameworks
