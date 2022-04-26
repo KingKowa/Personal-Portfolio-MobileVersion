@@ -7,6 +7,8 @@ portfolio project.
 
 2. Add "works" section and "about myself" section to the project.
 
+3. Add "footer" section containing the "contact form" to the project.
+
 ## Built With : 
 Major languages : HTML5, CSS3
 Frameworks
@@ -31,11 +33,13 @@ To get a local copy up and running follow these simple example steps.
 GitHub: @KingKowa
 Twitter: @kingkowa1
 LinkedIn: https://www.linkedin.com/in/frederick-ankomah-424548196
+
 ###### 👤 Author2
 
-GitHub: 
-Twitter: 
-LinkedIn: 
+GitHub: @fibini
+Twitter: @Onenewpage1
+LinkedIn: https://www.linkedin.com/in/fabien-brathwaite-91150822a/
+
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
