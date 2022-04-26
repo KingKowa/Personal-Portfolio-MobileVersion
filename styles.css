@@ -418,4 +418,33 @@ h3 {
   color: #6070ff;
   border: none;
   font-size: 17px;
+  transition-duration: 0.5s;
+}
+
+.name-text {
+  border: none;
+}
+
+.email-field {
+  border: none;
+}
+
+.text-fld {
+  border: none;
+}
+
+.bt {
+  background-color: #fff;
+  font-size: 17px;
+  border: none;
+  color: #6070ff;
+  font-weight: 500;
+}
+
+.footer-btn:hover {
+  background-color: #6070ff;
+}
+
+.footer-btn:active {
+  background-color: #2230d2;
 }
