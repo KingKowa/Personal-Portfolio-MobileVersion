@@ -33,11 +33,13 @@ To get a local copy up and running follow these simple example steps.
 GitHub: @KingKowa
 Twitter: @kingkowa1
 LinkedIn: https://www.linkedin.com/in/frederick-ankomah-424548196
+
 ###### 👤 Author2
 
-GitHub: 
-Twitter: 
-LinkedIn: 
+GitHub: @fibini
+Twitter: @Onenewpage1
+LinkedIn: https://www.linkedin.com/in/fabien-brathwaite-91150822a/
+
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
