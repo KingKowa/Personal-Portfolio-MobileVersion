@@ -499,11 +499,12 @@ h3 {
 
   .logo {
     margin-top: 25px;
-}
+    margin-left: 155px;
+  }
 
   .menu-icon {
     display: none;
-}
+  }
 
   .ul-nav-menu {
     display: flex;
@@ -549,11 +550,6 @@ h3 {
     margin-left: 260px;
     color: #7f8cff;
     font-weight: 500;
-  }
-
-  .logo {
-    margin-top: 25px;
-    margin-left: 155px;
   }
 
   .social-icons ul {
@@ -608,16 +604,16 @@ h3 {
     font-size: 40px;
     text-align: left;
     font-weight: bold;
-    color: #091E42;
+    color: #091e42;
   }
 
   .list-items {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 13px;
-  margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    margin-top: 20px;
   }
-    
+  
   .paragraph {
     margin-left: 16px;
     margin-right: 16px;
@@ -746,7 +742,7 @@ h3 {
     list-style: none;
   }
 
-  .about-social-icons ul li{
+  .about-social-icons ul li {
     display: inline-block;
     padding-right: 20px;
   }
@@ -828,6 +824,7 @@ h3 {
   .name-text {
     width: 393px;
     height: 18px;
+    border: none;
   }
 
   .email {
@@ -884,9 +881,4 @@ h3 {
     border: none;
     font-size: 17px;
   }
-
-  .name-text {
-    border: none;
-  }
-
-  }
+}
