@@ -9,6 +9,8 @@ portfolio project.
 
 3. Add "footer" section containing the "contact form" to the project.
 
+4. Use media queries to make sure the website displays correctly on desktop screens.
+
 ## Built With : 
 Major languages : HTML5, CSS3
 Frameworks
@@ -36,9 +38,9 @@ LinkedIn: https://www.linkedin.com/in/frederick-ankomah-424548196
 
 ###### 👤 Author2
 
-GitHub: @fibini
-Twitter: @Onenewpage1
-LinkedIn: https://www.linkedin.com/in/fabien-brathwaite-91150822a/
+GitHub: 
+Twitter: 
+LinkedIn: 
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!

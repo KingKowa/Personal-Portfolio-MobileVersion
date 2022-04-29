@@ -10,18 +10,34 @@
     <title>Fred's Personal Portfolio</title>
 </head>
 <body>
+
+    <!--HEADER SECTION -->
+
     <div class="header-container">
         <header class="toolbar-section">
             <nav class="nav-menu">
                 <a href="" class="logo"><img src="images/My-Logo.svg" alt=""></a>
                 <a href="" class="menu-icon"><img src="images/Icon-Menu.svg" alt=""></a>
+                <ul class="ul-nav-menu">
+                    <li id="portfolio">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li id="about">
+                        <a href="#">About</a>
+                    </li>
+                    <li id="contact">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <section class="headline-section">
             <div class="main-heading">
-                <h1>I’m Mariane Glad to see you!</h1>
+                <h1>I’m Mariane Glad to see you! 
+
+                </h1>
             </div>
-            <div>
+            <div >
                 <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
 
             </div>
@@ -43,11 +59,21 @@
         </section>
         
     </div>
+
+    <!-- MAIN WORKS SECTION -->
+
     <section class="works-section">
+        
+            <!-- FIRST SECTION -->
+
         <section class="subsection-one">
-                <div>
+                <div class="mobile-img">
                     <img src="images/Snapshoot-Portfolio.png" alt="">
                 </div>
+                <div class="desktop-img">
+                    <img src="images-desk/Snapshoot-Portfolio-1.svg" alt="">
+                </div>
+                <div class="first-section-info">
                 <div>
                     <h3>
                         Tonic
@@ -77,10 +103,17 @@
                 <div class="big-btn">
                     <button type="button" class="btn-4">See Project</button>
                 </div>
+                </div>
 
         </section>
+
+        <!-- SECOND SECTION -->
+
         <section class="subsection-two">
+            <div class="second-section-mobile-img">
             <img src="images/Snapshoot-Portfolio-2.png" alt="">
+            </div>
+            <div class="second-section-info">
                <div>
                 <h3>
                     Multi-Post Stories
@@ -95,8 +128,8 @@
                     <li>2015</li>
                 </ul>
             </div>
-            <div class="paragraph">
-                <h4>
+            <div class="paragraph" id="second-section-paragraph">
+                <h4 >
                     A daily selection of privately personalized reads; no accounts or sign-ups required.
                 </h4>
             </div>
@@ -110,10 +143,19 @@
             <div class="big-btn">
                 <button type="button" class="btn-4">See Project</button>
             </div>
+            </div>
+            <div class="second-section-desktop-img">
+                <img src="images-desk/Snapshoot-Portfolio-2.svg" alt="">
+            </div>
         </section>
+
+        <!-- THIRD SECTION -->
+
         <section class="subsection-three">
-            <img src="images/Snapshoot-Portfolio-3.png" alt="">
+            <img id="third-section-mobile-img" src="images/Snapshoot-Portfolio-3.png" alt="">
+            <img id="third-section-desktop-img" src="images-desk/Snapshoot-Portfolio-3.svg" alt="">
             <div>
+            <div class="third-section-info">
              <h3>
                  Tonic
              </h3>
@@ -142,10 +184,14 @@
          <div class="big-btn">
              <button type="button" class="btn-4">See Project</button>
          </div>
-
+         </div>
         </section>
+
+        <!-- FOURTH SECTION -->
+
         <section class="subsection-four">
-            <img src="images/Snapshoot-Portfolio-4.png" alt="">
+            <img id="subsection-four-img" src="images/Snapshoot-Portfolio-4.png" alt="">
+        <div class="fourth-section-info">
         <div>
           <h3>
              Multi-Post Stories
@@ -175,20 +221,26 @@
      <div class="big-btn">
          <button type="button" class="btn-4">See Project</button>
      </div>
-
-        </section>
+     </div>
+     <img id="subsection-four-desktop-img" src="images-desk/Snapshoot-Portfolio-4.svg" alt="">
+    
     </section>
+    </section>
+
+<!-- ABOUT SECTION -->
+
     <section class="about-section">
+        <div class="about-left">
         <div>
             <h2>About Myself</h2>
         </div>
-        <div>
-            <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <div class="">
+            <p id="about-p">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         </div>
         <div>
-            <h3>LET'S CONNECT</h3>
+            <h3 id="about-h3">LET'S CONNECT</h3>
         </div>
-       <div class="social-icons">
+       <div class="about-social-icons social-icons" >
             <ul>
                 <li><a href="#"><img src="images/Vector2.svg" alt=""></a></li>
                 <li><a href="#"><img src="images/Linkedin-icon.svg" alt=""></a></li>
@@ -197,15 +249,17 @@
                 <li><a href="#"><img src="images/Vector1.svg" alt=""></a></li>
             </ul>
         </div>
-        <div class="big-btn">
+        <div class="big-btn" id="about-btn">
             <button type="button" class="btn-5">Get my resume</button>
         </div>
+    </div>
+    <div class="about-right">
         <div class="skills">
             <ul>
                 <li>Languages</li>
             </ul>
         </div>
-        <div class="skills">
+        <div class="skills" id="about-skills">
             <div class="javascript">
                 <a href="" class="skills-icons"><img src="images/Javascript.svg" alt=""></a>
                 <a href="" class="text">JavaScript</a>
@@ -231,7 +285,9 @@
             </ul>
         </div>
         <hr class="skills">
+        </div>
     </section>
+
     <footer class="footer-section">
         <div class="contact">
             <h2>Contact me</h2>
@@ -255,6 +311,5 @@
         </form>
 
     </footer>
-    
 </body>
 </html>
