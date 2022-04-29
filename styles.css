@@ -47,11 +47,20 @@ p {
 }
 
 h3 {
+  font-size: 1.17em;
   margin-top: 12px;
   margin-bottom: 12px;
   margin-left: 24px;
   color: #7f8cff;
   font-weight: 500;
+  transition-property: font-size;
+  transition-delay: 1s;
+  transition-duration: 2.5s;
+}
+
+h3:hover {
+  color: red;
+  font-size: 30px;
 }
 
 .logo {
