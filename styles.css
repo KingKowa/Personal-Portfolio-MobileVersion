@@ -489,13 +489,13 @@ h3 {
     width: 1440px;
     height: 916px;
     margin: 0 auto;
-}
+  }
 
   .nav-menu {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-}
+  }
 
   .logo {
     margin-top: 25px;
@@ -509,7 +509,7 @@ h3 {
     display: flex;
     list-style: none;
     margin-top: 25px;
-}
+  }
 
   .ul-nav-menu li {
     margin-left: 16px;
