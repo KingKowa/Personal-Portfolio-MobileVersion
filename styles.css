@@ -494,7 +494,7 @@ h3 {
     background-position-x: 5rem;
     background-position-y: 8rem;
     background-size: 70rem;
-    padding: 0px;
+    padding: 0;
     width: 1440px;
     height: 916px;
     margin: 0 auto;
@@ -776,8 +776,7 @@ h3 {
     margin: 0 auto;
     padding-top: 142px;
     background-color: #6070ff;
-    border-top-left-radius: 200px;
-    padding: 0px;
+    padding: 0;
   }
 
   .contact h2 {
