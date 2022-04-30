@@ -56,6 +56,8 @@ h3 {
   transition-property: font-size;
   transition-delay: 1s;
   transition-duration: 2.5s;
+  animation-name: kowa;
+  animation-duration: 6s;
 }
 
 h3:hover {
@@ -458,4 +460,21 @@ h3:hover {
 
 .footer-btn:active {
   background-color: #2230d2;
+}
+
+@keyframes kowa {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.5);
+  }
+  50% {
+      transform: rotate(45deg);
+      color: tomato;
+  }
+  100% {
+      transform: rotate(0);
+  }
+  
 }
