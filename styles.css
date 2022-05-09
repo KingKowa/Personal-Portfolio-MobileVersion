@@ -515,6 +515,10 @@ h3 {
     display: none;
   }
 
+  .mobile-version-nav {
+    display: none;
+  }
+
   .ul-nav-menu {
     display: flex;
     list-style: none;
