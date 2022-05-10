@@ -11,6 +11,8 @@ portfolio project.
 
 4. Use media queries to make sure the website displays correctly on desktop screens.
 
+5. Add hidden mobile menu to the mobile version of the project.
+
 ## Built With : 
 Major languages : HTML5, CSS3
 Frameworks
@@ -30,15 +32,15 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 ### Deployment
 ### Authors
-###### 👤 Author1
+###### 👤 Author1 Frederick Ankomah
 
 GitHub: @KingKowa
 Twitter: @kingkowa1
 LinkedIn: https://www.linkedin.com/in/frederick-ankomah-424548196
 
-###### 👤 Author2
+###### 👤 Author2 Robin Benitez
 
-GitHub: 
+GitHub: robinbenitezmora
 Twitter: 
 LinkedIn: 
 
