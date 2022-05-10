@@ -44,11 +44,10 @@ li {
   pointer-events: auto;
 }
 
-.close {
-  font-size: 45px;
-  top: 5;
-  right: 5;
-  color: #fff;
+.close-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 
 .mobile-menu-items {
