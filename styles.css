@@ -28,6 +28,40 @@ li {
   padding-right: 24px;
 }
 
+.mobile-version-nav {
+  display: flex;
+  background: #6070ff;
+  height: 100vh;
+  position: fixed;
+  width: 375px;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-version-nav.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close {
+  font-size: 45px;
+  top: 5;
+  right: 5;
+  color: #fff;
+}
+
+.mobile-menu-items {
+  margin-left: 28px;
+  margin-top: 106px;
+}
+
+.mobile-menu-items li a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -897,4 +931,10 @@ h3 {
     border: none;
     font-size: 17px;
   }
+}
+
+
+
+.mobile-menu-items {
+  list-style: none;
 }
