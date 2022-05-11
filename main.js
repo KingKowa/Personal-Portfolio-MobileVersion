@@ -5,7 +5,6 @@ const menuPort = document.querySelector('.portfolio');
 const menuAbt = document.querySelector('.about');
 const menuCon = document.querySelector('.contact');
 
-
 menuIcon.addEventListener('click', () => {
   mobileNav.classList.add('active');
 });
