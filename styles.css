@@ -28,6 +28,43 @@ li {
   padding-right: 24px;
 }
 
+.mobile-version-nav {
+  display: flex;
+  background: #6070ff;
+  height: 100vh;
+  position: fixed;
+  width: 375px;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-version-nav.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-items li {
+  list-style: none;
+}
+
+.close-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.mobile-menu-items {
+  margin-left: 28px;
+  margin-top: 106px;
+}
+
+.mobile-menu-items li a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -171,7 +208,7 @@ h3 {
   margin-top: 36px;
   margin-bottom: 23px;
   list-style: none;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .btn-1 {
@@ -359,7 +396,7 @@ h3 {
 
 .contact h2 {
   color: #fff;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 40px;
   text-align: center;
 }
@@ -512,6 +549,10 @@ h3 {
   }
 
   .menu-icon {
+    display: none;
+  }
+
+  .mobile-version-nav {
     display: none;
   }
 
@@ -727,7 +768,7 @@ h3 {
     width: 447px;
     height: 102px;
     font-size: 40px;
-    font-weight: 700, bold;
+    font-weight: 700;
     color: #091e42;
   }
 
@@ -737,7 +778,6 @@ h3 {
     height: 102px;
     font-size: 16px;
     color: #344563;
-    text-align: top;
     margin-bottom: 12px;
   }
 
@@ -780,7 +820,7 @@ h3 {
 
   .contact h2 {
     color: #fff;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 40px;
     text-align: center;
   }
@@ -804,7 +844,6 @@ h3 {
 
   .form-heading {
     color: #fff;
-    font-style: bold;
     font-size: 40px;
   }
 
