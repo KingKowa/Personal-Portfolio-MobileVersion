@@ -15,8 +15,8 @@ closeButton.addEventListener('click', () => {
 });
 
 menuPort.addEventListener('click', () => {
-    mobileNav.classList.remove('active');
-  });
+  mobileNav.classList.remove('active');
+});
 
 menuAbt.addEventListener('click', () => {
   mobileNav.classList.remove('active');
@@ -25,5 +25,3 @@ menuAbt.addEventListener('click', () => {
 menuCon.addEventListener('click', () => {
   mobileNav.classList.remove('active');
 });
-
-
