@@ -65,6 +65,29 @@ li {
   color: #fff;
 }
 
+.details-modal {
+  position: fixed;
+  opacity: 1;
+  height: 713px;
+  /*pointer-events: none;*/
+}
+
+.sub-modal {
+  width: 343px;
+  height: 713px;
+  background-color: #2230d2;
+  border: 3px solid red;
+  display: none;
+}
+
+.modal-para {
+  width: 311px;
+  height: 220px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 12px;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
