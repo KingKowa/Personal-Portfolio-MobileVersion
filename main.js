@@ -24,3 +24,4 @@ menuAbt.addEventListener('click', () => {
 menuCon.addEventListener('click', () => {
   mobileNav.classList.remove('active');
 });
+

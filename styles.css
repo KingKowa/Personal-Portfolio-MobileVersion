@@ -67,17 +67,15 @@ li {
 
 .details-modal {
   position: fixed;
-  opacity: 1;
   height: 713px;
-  /*pointer-events: none;*/
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sub-modal {
   width: 343px;
   height: 713px;
   background-color: #2230d2;
-  border: 3px solid red;
-  display: none;
 }
 
 .modal-para {
@@ -86,6 +84,12 @@ li {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 12px;
+}
+
+.close-popup {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 
 .nav-menu {
