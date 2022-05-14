@@ -25,3 +25,19 @@ menuCon.addEventListener('click', () => {
   mobileNav.classList.remove('active');
 });
 
+const ProjectData =[
+
+  {
+  
+    name: "project 1",
+    description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis nobis voluptatem ex vel? Amet!",
+    Image : "images/Snapshoot-Portfolio-3.png",
+  },
+  
+  {
+  
+    name: "project 2",
+    description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis nobis voluptatem ex vel? Amet!",
+    Image : "images/Snapshoot-Portfolio-3.png",
+  },
+  
