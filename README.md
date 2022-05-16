@@ -14,7 +14,7 @@ portfolio project.
 5. Add hidden mobile menu to the mobile version of the project.
 
 ## Built With : 
-Major languages : HTML5, CSS3
+Major languages : HTML5, CSS3 , JAVASCRIPT
 Frameworks
 Technologies used
 Live Demo (if available)
@@ -38,10 +38,10 @@ GitHub: @KingKowa
 Twitter: @kingkowa1
 LinkedIn: https://www.linkedin.com/in/frederick-ankomah-424548196
 
-###### 👤 Author2 Robin Benitez
+###### 👤 Author2 Guishny DESOR
 
-GitHub: robinbenitezmora
-Twitter: 
+GitHub: https://github.com/desorgui
+Twitter: https://twitter.com/DGuishny
 LinkedIn: 
 
 ## 🤝 Contributing

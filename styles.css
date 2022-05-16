@@ -28,8 +28,6 @@ li {
   padding-right: 24px;
 }
 
-/*   MOBILE NAVIGATION CODE GOES HERE */
-
 .mobile-version-nav {
   display: flex;
   background: #6070ff;
@@ -42,7 +40,7 @@ li {
 }
 
 .mobile-version-nav.active {
-  opacity: 1;
+  opacity: 0.8;
   pointer-events: auto;
 }
 
