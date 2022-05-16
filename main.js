@@ -8,3 +8,19 @@ const menuCon = document.querySelector('.contact');
 menuIcon.addEventListener('click', () => {
   mobileNav.classList.add('active');
 });
+
+closeButton.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+});
+
+menuPort.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+});
+
+menuAbt.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+});
+
+menuCon.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+});
