@@ -30,6 +30,21 @@ li {
 
 /*   MOBILE NAVIGATION CODE GOES HERE */
 
+.mobile-version-nav {
+  display: flex;
+  background: #6070ff;
+  height: 100vh;
+  position: fixed;
+  width: 375px;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-version-nav.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 .mobile-menu-items li {
   list-style: none;
