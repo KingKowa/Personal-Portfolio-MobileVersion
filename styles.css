@@ -44,6 +44,16 @@ li {
   pointer-events: auto;
 }
 
+.headline-section.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.nav-menu.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
 .mobile-menu-items li {
   list-style: none;
 }
