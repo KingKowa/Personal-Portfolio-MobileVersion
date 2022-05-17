@@ -40,7 +40,7 @@ li {
 }
 
 .mobile-version-nav.active {
-  opacity: 0.8;
+  opacity: 0.9;
   pointer-events: auto;
 }
 
@@ -62,6 +62,7 @@ li {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  color: #fff;
 }
 
 .mobile-menu-items {

@@ -21,12 +21,18 @@ closeButton.addEventListener('click', () => {
 
 menuPort.addEventListener('click', () => {
   mobileNav.classList.remove('active');
+  background.classList.remove('blur');
+  backgroundNav.classList.remove('blur');
 });
 
 menuAbt.addEventListener('click', () => {
   mobileNav.classList.remove('active');
+  background.classList.remove('blur');
+  backgroundNav.classList.remove('blur');
 });
 
 menuCon.addEventListener('click', () => {
   mobileNav.classList.remove('active');
+  background.classList.remove('blur');
+  backgroundNav.classList.remove('blur');
 });
