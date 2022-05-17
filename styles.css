@@ -42,8 +42,6 @@ li {
 .mobile-version-nav.active {
   opacity: 0.8;
   pointer-events: auto;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 .mobile-menu-items li {
@@ -111,6 +109,8 @@ h3 {
 
 .menu-icon {
   margin-top: 63px;
+  border: none;
+  background-color: transparent;
 }
 
 .social-icons ul {
