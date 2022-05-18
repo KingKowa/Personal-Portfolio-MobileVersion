@@ -36,3 +36,23 @@ menuCon.addEventListener('click', () => {
   background.classList.remove('blur');
   backgroundNav.classList.remove('blur');
 });
+
+const projectSection = [
+  {
+    name: 'Multipost Stories',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi ullam ea unde laudantium odit eos expedita quo, optio tempora.',
+    featuredImage: 'images/Snapshoot-Portfolio-3.png',
+    technologies: ['html', 'css','javascript'],
+    liveversion:'',
+    source:'',
+  },
+  {
+    name: 'Multipost Stories',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi ullam ea unde laudantium odit eos expedita quo, optio tempora.',
+    featuredImage: 'images/Snapshoot-Portfolio-3.png',
+    technologies: ['html', 'css','javascript'],
+    liveversion:'',
+    source:'',
+  },
+  
+];
