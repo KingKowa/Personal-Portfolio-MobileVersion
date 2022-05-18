@@ -160,6 +160,27 @@ const ulList = document.createElement('ul');
     ulList.appendChild(cat);
 });
 mainPopUpWin.appendChild(ulList);
-    })
+mainPopUpWin.innerHTML += `
+            <div class="pop-img">
+                <img src="${projectSection[index].featuredImage}" alt="">
+            </div>
+            <div class="modal-para">
+            <p class="pop-message">
+                ${projectSection[index].description}
+            </p>
+            </div>
+`
+const techList = document.createElement('ul');
+techList.classList.add('pop-tech');
 
+projectSection[index].technologies.forEach((elem, index)=>{
+  const list = document.createElement('li');
+  techList.appendChild(list);
+  const buttons = document.createElement('button');  
+  buttons.classList.add(`btn-${index + 1}`)
+  list.appendChild(buttons);
+  buttons.textContent = elem;
+});
+mainPopUpWin.appendChild(techList);
+    })
 })
