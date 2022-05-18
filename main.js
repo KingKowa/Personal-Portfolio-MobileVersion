@@ -182,5 +182,13 @@ projectSection[index].technologies.forEach((elem, index)=>{
   buttons.textContent = elem;
 });
 mainPopUpWin.appendChild(techList);
+mainPopUpWin.innerHTML += `
+<div>
+    <ul class="pop-button">
+         <li><button type="button" class="pop-btn">See live <img src="images/Icon1.svg" alt=""></button></li>
+          <li><button type="button" class="pop-btn">See Source <img src="images/Vector2.svg" alt=""></button></li>
+    </ul>
+</div>
+`
     })
 })
