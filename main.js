@@ -40,35 +40,39 @@ menuCon.addEventListener('click', () => {
 const projectSection = [
   {
     name: 'Multipost Stories',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi ullam ea unde laudantium odit eos expedita quo, optio tempora.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css','javascript'],
     liveversion:'',
     source:'',
+    category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
     name: 'Multipost Stories',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi ullam ea unde laudantium odit eos expedita quo, optio tempora.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css','javascript'],
     liveversion:'',
     source:'',
+    category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
     name: 'Multipost Stories',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi ullam ea unde laudantium odit eos expedita quo, optio tempora.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-4.png',
     technologies: ['html', 'css','Bootstrap'],
     liveversion:'',
     source:'',
+    category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
     name: 'Multipost Stories',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi ullam ea unde laudantium odit eos expedita quo, optio tempora.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-5.png',
     technologies: ['html', 'css','React'],
     liveversion:'',
     source:'',
+    category: ['CANOPY', 'Back End Dev', '2015'],
   },  
 ];
 
@@ -81,7 +85,47 @@ for (let i=0; i < 4; i += 1 ){
   <h3>${projectSection[i].name}</h3>
   <div class="second-section-mobile-img">
   <img src="${projectSection[i].featuredImage}" alt="Featured Image">
-  </div>`
-
+  </div>
+  <div class="desktop-img">
+                    <img src="${projectSection[i].featuredImage}" alt="">
+                </div>`
+  const firstSection = document.createElement('div');
+  firstSection.innerHTML=`<div>
+  <h3>
+      ${projectSection[i].name}
+  </h3>
+</div>
+<div class="paragraph">
+  <h4>
+      ${projectSection[i].description}
+  </h4>
+</div>
+`
+  firstSection.classList.add('first-section-info');
+  subsection.append(firstSection);
   workSection.appendChild(subsection);
+  const listItems = document.createElement('ul');
+  listItems.classList.add('btn-changes');
+
+  const ulList = document.createElement('ul');
+  ulList.classList.add('list-items');
+
+  projectSection[i].category.forEach((elem)=>{
+    const cat = document.createElement('li');
+    listItems.appendChild(cat);
+    cat.textContent = elem;
+    ulList.appendChild(cat);
+});
+
+  projectSection[i].technologies.forEach((elem)=>{
+      const list = document.createElement('li');
+      listItems.appendChild(list);
+      const buttons = document.createElement('button');
+      list.appendChild(buttons);
+      buttons.textContent = elem;
+  });
+  firstSection.appendChild(listItems);
+  firstSection.innerHTML += `<div class="big-btn">
+  <button type="button" class="btn-4">See Project</button>
+</div>`
 }

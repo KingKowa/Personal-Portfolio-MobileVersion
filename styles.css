@@ -78,7 +78,7 @@ li {
   position: fixed;
   background-color: #2230d2;
   height: 100vh;
-  /*display: none;*/
+  display: none;
 }
 
 .sub-modal {
@@ -220,7 +220,7 @@ h3 {
 }
 
 .subsection-one {
-  height: 552px;
+  height: fit-content;
   margin: 0 auto;
   padding-top: 16px;
   padding-left: 16px;
