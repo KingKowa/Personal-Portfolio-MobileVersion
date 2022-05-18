@@ -130,3 +130,36 @@ firstSection.appendChild(ulList)
   <button type="button" class="btn-4">See Project</button>
 </div>`
 }
+
+const seeMore = document.querySelectorAll('.btn-4');
+seeMore.forEach((element, index) => {
+    element.addEventListener('click', () => {
+        const popUpWin = document.createElement('div');
+        popUpWin.classList.add('details-modal');
+        const mainPopUpWin = document.createElement('div');
+        mainPopUpWin.classList.add('sub-modal');
+        popUpWin.appendChild(mainPopUpWin);
+    document.body.appendChild(popUpWin);
+    mainPopUpWin.innerHTML += `
+    <button class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+<div>
+    <h3 class="pop-heading">
+    ${projectSection[index].name}
+    </h3>
+</div>
+`
+const ulList = document.createElement('ul');
+  ulList.classList.add('list-items');
+
+  projectSection[index].category.forEach((elem, i)=>{
+    const cat = document.createElement('li');
+    cat.className = `item-${i}`;
+    cat.textContent = elem;
+    ulList.appendChild(cat);
+});
+mainPopUpWin.appendChild(ulList);
+    })
+
+})

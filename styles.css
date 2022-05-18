@@ -78,7 +78,7 @@ li {
   position: fixed;
   background-color: #2230d2;
   height: 100vh;
-  display: none;
+  top: 0;
 }
 
 .sub-modal {
