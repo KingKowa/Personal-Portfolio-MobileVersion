@@ -82,40 +82,41 @@ for (let i=0; i < 4; i += 1 ){
   const subsection = document.createElement('section');
   subsection.className = "subsection-one"
   subsection.innerHTML= `
-  <h3>${projectSection[i].name}</h3>
   <div class="second-section-mobile-img">
   <img src="${projectSection[i].featuredImage}" alt="Featured Image">
   </div>
   <div class="desktop-img">
-                    <img src="${projectSection[i].featuredImage}" alt="">
-                </div>`
+      <img src="${projectSection[i].featuredImage}" alt="">
+  </div>`
   const firstSection = document.createElement('div');
-  firstSection.innerHTML=`<div>
+  firstSection.innerHTML =`
+  <div>
   <h3>
       ${projectSection[i].name}
   </h3>
-</div>
-<div class="paragraph">
-  <h4>
-      ${projectSection[i].description}
-  </h4>
-</div>
+  </div>`
+
+  const ulList = document.createElement('ul');
+  ulList.classList.add('list-items');
+
+  projectSection[i].category.forEach((elem, index)=>{
+    const cat = document.createElement('li');
+    cat.className = `item-${index}`;
+    cat.textContent = elem;
+    ulList.appendChild(cat);
+});
+firstSection.appendChild(ulList)
+  firstSection.innerHTML +=`<div class="paragraph">
+    <h4>
+        ${projectSection[i].description}
+    </h4>
+  </div>
 `
   firstSection.classList.add('first-section-info');
   subsection.append(firstSection);
   workSection.appendChild(subsection);
   const listItems = document.createElement('ul');
   listItems.classList.add('btn-changes');
-
-  const ulList = document.createElement('ul');
-  ulList.classList.add('list-items');
-
-  projectSection[i].category.forEach((elem)=>{
-    const cat = document.createElement('li');
-    listItems.appendChild(cat);
-    cat.textContent = elem;
-    ulList.appendChild(cat);
-});
 
   projectSection[i].technologies.forEach((elem)=>{
       const list = document.createElement('li');
