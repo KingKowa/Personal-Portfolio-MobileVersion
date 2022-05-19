@@ -44,6 +44,10 @@ li {
   pointer-events: auto;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .headline-section.blur {
   filter: blur(8px);
   -webkit-filter: blur(8px);
@@ -338,7 +342,6 @@ h3 {
   padding-top: 12px;
   padding-bottom: 12px;
   margin-right: 12px;
-  margin-bottom: 28px;
 }
 
 .btn-4:hover {

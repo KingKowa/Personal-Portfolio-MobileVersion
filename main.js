@@ -39,7 +39,7 @@ menuCon.addEventListener('click', () => {
 
 const projectSection = [
   {
-    name: 'Multipost Stories',
+    name: 'Tonic',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css','javascript'],
@@ -48,7 +48,7 @@ const projectSection = [
     category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
-    name: 'Multipost Stories',
+    name: 'Tonic',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css','javascript'],
@@ -57,7 +57,7 @@ const projectSection = [
     category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
-    name: 'Multipost Stories',
+    name: 'Tonic',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-4.png',
     technologies: ['html', 'css','Bootstrap'],
@@ -66,7 +66,7 @@ const projectSection = [
     category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
-    name: 'Multipost Stories',
+    name: 'Tonic',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-5.png',
     technologies: ['html', 'css','React'],
@@ -114,7 +114,6 @@ firstSection.appendChild(ulList)
 `
   firstSection.classList.add('first-section-info');
   subsection.append(firstSection);
-  workSection.appendChild(subsection);
   const listItems = document.createElement('ul');
   listItems.classList.add('btn-changes');
 
@@ -129,6 +128,7 @@ firstSection.appendChild(ulList)
   firstSection.innerHTML += `<div class="big-btn">
   <button type="button" class="btn-4">See Project</button>
 </div>`
+workSection.appendChild(subsection);
 }
 
 const seeMore = document.querySelectorAll('.btn-4');
@@ -141,7 +141,7 @@ seeMore.forEach((element, index) => {
         popUpWin.appendChild(mainPopUpWin);
     document.body.appendChild(popUpWin);
     mainPopUpWin.innerHTML += `
-    <button class="close-btn">
+    <button class="close-pop">
         <i class="fa-solid fa-xmark"></i>
     </button>
 <div>
@@ -158,8 +158,8 @@ const ulList = document.createElement('ul');
     cat.className = `item-${i}`;
     cat.textContent = elem;
     ulList.appendChild(cat);
-});
-mainPopUpWin.appendChild(ulList);
-    })
+  });
+  mainPopUpWin.appendChild(ulList);
 
+    })
 })
