@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.blur {
+  filter: blur(8px);
+}
+
 body,
 p,
 a,
@@ -71,20 +75,23 @@ li {
 
 .close-pop {
   position: absolute;
-  right: 3rem;
-  top: 5rem;
+  right: 30px;
+  top: 20px;
   border: none;
   background-color: transparent;
   font-size: 20px;
 }
 
 .details-modal {
-  position: fixed;
-  background-color: #c1c7d0;
-  height: 1577px;
+  position: absolute;
+  background-color: #c1c7d054;
+  height: 100vh;
+  width: 100%;
   top: 0;
-  opacity: 0.9;
+  display: flex;
+  justify-content: center;
 }
+
 
 .desk-top-img {
   display: none;
@@ -98,7 +105,8 @@ li {
   padding-left: 16px;
   padding-right: 16px;
   width: 343px;
-  height: 713px;
+  height: fit-content;
+  position: relative;
 }
 
 .pop-img {
@@ -112,10 +120,22 @@ li {
   font-weight: 500;
 }
 
+.popup-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-bottom .modal-para {
+  width: 100%;
+}
+
+.popup-bottom .pop-message {
+  width: 100%;
+}
+
 .pop-message {
-  margin-left: 0;
-  height: 180px;
-  width: 311px;
+  margin: 0;
+  height: auto;
 }
 
 .pop-tech {
@@ -235,14 +255,38 @@ h3 {
 }
 
 .subsection-one {
-  height: 496px;
   margin: 0 auto;
-  padding-top: 16px;
-  padding-left: 16px;
+  padding: 1rem;
   padding-bottom: 20px;
   background-color: #fff;
   width: 327px;
   border-radius: 2%;
+}
+
+
+.list-items li:first-child {
+  list-style: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 0;
+}
+
+.list-items li {
+  margin-left: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6B778C;
+}
+
+::marker {
+  font-size: 20px;
 }
 
 .subsection-two {
@@ -357,6 +401,7 @@ h3 {
 
 .btn-4:hover {
   background-color: #6070ff;
+  color: #fff;
 }
 
 .btn-5 {
@@ -392,6 +437,20 @@ h3 {
   display: flex;
   gap: 8px;
   justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.btn-changes button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  background: #EBEBFF;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #6070ff;
 }
 
 .big-btn {
@@ -401,11 +460,24 @@ h3 {
 
 .paragraph {
   margin-top: 20px;
-  height: 76px;
   width: 295px;
   font-size: 15px;
   font-weight: 400;
   color: #344563;
+}
+
+.paragraph p {
+  margin: 0;
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.subsection-one .paragraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .list-items {
@@ -426,10 +498,8 @@ h3 {
 }
 
 .subsection-one h3 {
-  width: 295px;
-  height: 36px;
   font-size: 32px;
-  margin-left: 16px;
+  margin-left: 0;
   margin-right: 16px;
   color: #173b4d;
   font-weight: 700;
@@ -710,10 +780,10 @@ h3 {
     background-color: #fff;
     margin-left: 10px;
     margin-right: 22px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 50px;
     width: 1156px;
-    height: 80%;
+    height: fit-content;
+    position: relative;
   }
 
   .works-section {
@@ -731,14 +801,25 @@ h3 {
 
   .subsection-one {
     display: flex;
-    height: 496px;
-    margin: 0 auto;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-bottom: 20px;
+    padding: 1rem;
     background-color: #fff;
     width: 1156px;
     border-radius: 2%;
+  }
+
+  .subsection-one:nth-child(2),
+  .subsection-one:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+
+  .popup-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-bottom .modal-para {
+    width: 70%;
+    margin-right: 30px;
   }
 
   .mobile-img {
@@ -746,7 +827,7 @@ h3 {
   }
 
   .desktop-img {
-    display: block;
+    display: flex;
   }
 
   .first-section-info {
@@ -761,6 +842,7 @@ h3 {
     text-align: left;
     font-weight: bold;
     color: #091e42;
+    margin-left: 0;
   }
 
   .list-items {
@@ -768,13 +850,12 @@ h3 {
     justify-content: flex-start;
     font-size: 13px;
     margin-top: 20px;
+    align-items: baseline;
   }
 
   .paragraph {
-    margin-left: 16px;
     margin-right: 16px;
     margin-top: 20px;
-    height: 50px;
     width: 496px;
     font-size: 16px;
     font-weight: 400;

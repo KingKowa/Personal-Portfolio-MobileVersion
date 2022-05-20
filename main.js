@@ -40,39 +40,39 @@ menuCon.addEventListener('click', () => {
 const projectSection = [
   {
     name: 'Tonic',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    featuredImage: './images/Snapshoot-Portfolio-3.png',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    featuredImage: './images-desk/Snapshoot-Portfolio-1.svg',
     technologies: ['html', 'css', 'javascript'],
     liveversion: '',
     source: '',
-    category: ['CANOPY', 'Back End Dev', '2015'],
+    category: ['CANOPY', 'Back End', '2015'],
   },
   {
     name: 'Multipost Stories',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    featuredImage: './images/Snapshoot-Portfolio-3.png',
+    featuredImage: './images-desk/Snapshoot-Portfolio-2.svg',
     technologies: ['html', 'css', 'javascript'],
     liveversion: '',
     source: '',
-    category: ['CANOPY', 'Back End Dev', '2015'],
+    category: ['CANOPY', 'Back End', '2015'],
   },
   {
     name: 'Tonic',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    featuredImage: './images/Snapshoot-Portfolio-4.png',
+    featuredImage: './images-desk/Snapshoot-Portfolio-3.svg',
     technologies: ['html', 'css', 'Bootstrap'],
     liveversion: '',
     source: '',
-    category: ['CANOPY', 'Back End Dev', '2015'],
+    category: ['CANOPY', 'Back End', '2015'],
   },
   {
     name: 'Tonic',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    featuredImage: './images/Snapshoot-Portfolio-5.png',
+    featuredImage: './images-desk/Snapshoot-Portfolio-4.svg',
     technologies: ['html', 'css', 'React'],
     liveversion: '',
     source: '',
-    category: ['CANOPY', 'Back End Dev', '2015'],
+    category: ['CANOPY', 'Back End', '2015'],
   },
 ];
 
@@ -107,9 +107,9 @@ for (let i = 0; i < 4; i += 1) {
   });
   firstSection.appendChild(ulList);
   firstSection.innerHTML += `<div class="paragraph">
-    <h4>
+    <p>
         ${projectSection[i].description}
-    </h4>
+    </p>
   </div>
 `;
   firstSection.classList.add('first-section-info');
@@ -159,17 +159,24 @@ seeMore.forEach((element, index) => {
       cat.textContent = elem;
       ulList.appendChild(cat);
     });
+    
+    const popupBottom = document.createElement('div');
+    popupBottom.classList.add('popup-bottom');
     mainPopUpWin.appendChild(ulList);
     mainPopUpWin.innerHTML += `
             <div class="pop-img">
                 <img src="${projectSection[index].featuredImage}" alt="" class="responsive">
-            </div>
+            </div>`
+            popupBottom.innerHTML=`
             <div class="modal-para">
             <p class="pop-message">
                 ${projectSection[index].description}
             </p>
             </div>
 `;
+    
+    const rightSide = document.createElement('div');
+    rightSide.classList.add('right-side');
     const techList = document.createElement('ul');
     techList.classList.add('pop-tech');
 
@@ -181,8 +188,10 @@ seeMore.forEach((element, index) => {
       list.appendChild(buttons);
       buttons.textContent = elem;
     });
-    mainPopUpWin.appendChild(techList);
-    mainPopUpWin.innerHTML += `
+    rightSide.appendChild(techList);
+    popupBottom.appendChild(rightSide)
+    mainPopUpWin.appendChild(popupBottom);
+    rightSide.innerHTML += `
 <div>
     <ul class="pop-button">
          <li><button type="button" class="pop-btn">See live <img src="images/Icon1.svg" alt=""></button></li>
@@ -190,10 +199,17 @@ seeMore.forEach((element, index) => {
     </ul>
 </div>
 `;
+
+window.scrollTo(0,0)
+
+const mainContent = document.querySelector('#main-content');
+mainContent.classList.add('blur');
+
     const popupClose = document.querySelector('.close-pop');
     popupClose.addEventListener('click', () => {
       document.querySelector('.details-modal').classList.add('hidden');
       document.querySelector('.details-modal').remove();
+      mainContent.classList.remove('blur');
     });
   });
 });
