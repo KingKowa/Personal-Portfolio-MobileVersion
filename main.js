@@ -83,10 +83,10 @@ for (let i=0; i < 4; i += 1 ){
   subsection.className = "subsection-one"
   subsection.innerHTML= `
   <div class="second-section-mobile-img">
-  <img src="${projectSection[i].featuredImage}" alt="Featured Image">
+  <img src="${projectSection[i].featuredImage}" alt="Featured Image" class="responsive">
   </div>
   <div class="desktop-img">
-      <img src="${projectSection[i].featuredImage}" alt="">
+      <img src="${projectSection[i].featuredImage}" alt="" class="responsive">
   </div>`
   const firstSection = document.createElement('div');
   firstSection.innerHTML =`
@@ -158,8 +158,42 @@ const ulList = document.createElement('ul');
     cat.className = `item-${i}`;
     cat.textContent = elem;
     ulList.appendChild(cat);
-  });
-  mainPopUpWin.appendChild(ulList);
+});
+mainPopUpWin.appendChild(ulList);
+mainPopUpWin.innerHTML += `
+            <div class="pop-img">
+                <img src="${projectSection[index].featuredImage}" alt="" class="responsive">
+            </div>
+            <div class="modal-para">
+            <p class="pop-message">
+                ${projectSection[index].description}
+            </p>
+            </div>
+`
+const techList = document.createElement('ul');
+techList.classList.add('pop-tech');
 
+projectSection[index].technologies.forEach((elem, index)=>{
+  const list = document.createElement('li');
+  techList.appendChild(list);
+  const buttons = document.createElement('button');  
+  buttons.classList.add(`btn-${index + 1}`)
+  list.appendChild(buttons);
+  buttons.textContent = elem;
+});
+mainPopUpWin.appendChild(techList);
+mainPopUpWin.innerHTML += `
+<div>
+    <ul class="pop-button">
+         <li><button type="button" class="pop-btn">See live <img src="images/Icon1.svg" alt=""></button></li>
+          <li><button type="button" class="pop-btn">See Source <img src="images/Vector2.svg" alt=""></button></li>
+    </ul>
+</div>
+`
+const popupClose = document.querySelector('.close-pop');
+  popupClose.addEventListener('click', () => {
+  document.querySelector('.details-modal').classList.add('hidden');
+  document.querySelector('.details-modal').remove();
+});
     })
 })
