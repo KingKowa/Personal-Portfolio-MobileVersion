@@ -40,7 +40,7 @@ menuCon.addEventListener('click', () => {
 const projectSection = [
   {
     name: 'Tonic',
-    description: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: './images-desk/Snapshoot-Portfolio-1.svg',
     technologies: ['html', 'css', 'javascript'],
     liveversion: '',
@@ -200,7 +200,7 @@ seeMore.forEach((element, index) => {
 </div>
 `;
 
-window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 
     const mainContent = document.querySelector('#main-content');
     mainContent.classList.add('blur');
