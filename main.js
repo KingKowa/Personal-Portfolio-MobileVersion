@@ -38,8 +38,16 @@ menuCon.addEventListener('click', () => {
 });
 
 
-const userEmail = document.querySelector('#email');
-const form = document.querySelector('#form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const lowerCase = (userEmail.value).toLowerCase();
+const userEmail = document.querySelector('.email-field');
+const form = document.querySelector('#desk-contact');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (userEmail.value !== (userEmail.value).toLowerCase()) {
+    const pTag = document.createElement('p');
+    pTag.className = 'errorMsg';
+    pTag.innerHTML = 'Your email must be lowercase';
+    form.appendChild(span);
+  } else {
+    form.submit();
+  }
+});
