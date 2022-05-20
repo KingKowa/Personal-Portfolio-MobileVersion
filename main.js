@@ -159,22 +159,22 @@ seeMore.forEach((element, index) => {
       cat.textContent = elem;
       ulList.appendChild(cat);
     });
-    
+
     const popupBottom = document.createElement('div');
     popupBottom.classList.add('popup-bottom');
     mainPopUpWin.appendChild(ulList);
     mainPopUpWin.innerHTML += `
             <div class="pop-img">
                 <img src="${projectSection[index].featuredImage}" alt="" class="responsive">
-            </div>`
-            popupBottom.innerHTML=`
+            </div>`;
+    popupBottom.innerHTML = `
             <div class="modal-para">
             <p class="pop-message">
                 ${projectSection[index].description}
             </p>
             </div>
 `;
-    
+
     const rightSide = document.createElement('div');
     rightSide.classList.add('right-side');
     const techList = document.createElement('ul');
@@ -189,7 +189,7 @@ seeMore.forEach((element, index) => {
       buttons.textContent = elem;
     });
     rightSide.appendChild(techList);
-    popupBottom.appendChild(rightSide)
+    popupBottom.appendChild(rightSide);
     mainPopUpWin.appendChild(popupBottom);
     rightSide.innerHTML += `
 <div>
@@ -200,10 +200,10 @@ seeMore.forEach((element, index) => {
 </div>
 `;
 
-window.scrollTo(0,0)
+window.scrollTo(0,0);
 
-const mainContent = document.querySelector('#main-content');
-mainContent.classList.add('blur');
+    const mainContent = document.querySelector('#main-content');
+    mainContent.classList.add('blur');
 
     const popupClose = document.querySelector('.close-pop');
     popupClose.addEventListener('click', () => {
