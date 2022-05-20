@@ -40,7 +40,7 @@ menuCon.addEventListener('click', () => {
 const projectSection = [
   {
     name: 'Tonic',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
     featuredImage: './images-desk/Snapshoot-Portfolio-1.svg',
     technologies: ['html', 'css', 'javascript'],
     liveversion: '',
@@ -48,8 +48,8 @@ const projectSection = [
     category: ['CANOPY', 'Back End', '2015'],
   },
   {
-    name: 'Multipost Stories',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    name: 'Multi-post Stories',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     featuredImage: './images-desk/Snapshoot-Portfolio-2.svg',
     technologies: ['html', 'css', 'javascript'],
     liveversion: '',
@@ -57,8 +57,8 @@ const projectSection = [
     category: ['CANOPY', 'Back End', '2015'],
   },
   {
-    name: 'Tonic',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    name: 'Facebook 360',
+    description: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     featuredImage: './images-desk/Snapshoot-Portfolio-3.svg',
     technologies: ['html', 'css', 'Bootstrap'],
     liveversion: '',
@@ -66,7 +66,7 @@ const projectSection = [
     category: ['CANOPY', 'Back End', '2015'],
   },
   {
-    name: 'Tonic',
+    name: 'Multi-post Stories',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images-desk/Snapshoot-Portfolio-4.svg',
     technologies: ['html', 'css', 'React'],

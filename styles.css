@@ -338,6 +338,10 @@ h3 {
   font-size: 40px;
 }
 
+#desk-about {
+  margin-top: 300px;
+}
+
 .skills {
   margin-left: 36px;
   margin-right: 36px;
@@ -947,6 +951,10 @@ h3 {
     margin: 0 auto;
     display: flex;
     padding-right: 180px;
+  }
+
+  #desk-about {
+    margin-top: 98px;
   }
 
   .about-section h2 {
