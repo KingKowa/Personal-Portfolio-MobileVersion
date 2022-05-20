@@ -78,7 +78,7 @@ const projectSection = [
 
 const workSection = document.querySelector('#works-section');
 
-for (let i = 0; i < 4; i += 1){
+for (let i = 0; i < 4; i += 1) {
   const subsection = document.createElement('section');
   subsection.className = 'subsection-one';
   subsection.innerHTML = `
