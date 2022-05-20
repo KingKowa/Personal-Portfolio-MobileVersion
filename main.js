@@ -36,3 +36,10 @@ menuCon.addEventListener('click', () => {
   background.classList.remove('blur');
   backgroundNav.classList.remove('blur');
 });
+
+
+const userEmail = document.querySelector('#email');
+const form = document.querySelector('#form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const lowerCase = (userEmail.value).toLowerCase();
