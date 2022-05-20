@@ -48,7 +48,7 @@ const projectSection = [
     category: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
-    name: 'Tonic',
+    name: 'Multipost Stories',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css', 'javascript'],
