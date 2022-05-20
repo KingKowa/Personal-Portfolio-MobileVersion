@@ -83,6 +83,7 @@ li {
   background-color: #c1c7d0;
   height: 1577px;
   top: 0;
+  opacity: 0.9;
 }
 
 .desk-top-img {
@@ -97,7 +98,7 @@ li {
   padding-left: 16px;
   padding-right: 16px;
   width: 343px;
-  height: fit-content;
+  height: 713px;
 }
 
 .pop-img {
@@ -234,7 +235,7 @@ h3 {
 }
 
 .subsection-one {
-  height: fit-content;
+  height: 496px;
   margin: 0 auto;
   padding-top: 16px;
   padding-left: 16px;
