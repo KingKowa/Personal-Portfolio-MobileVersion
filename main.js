@@ -78,7 +78,7 @@ const projectSection = [
 
 const workSection = document.querySelector('#works-section');
 
-for ( let i=0; i < 4; i += 1 ) {
+for (let i = 0; i < 4; i += 1){
   const subsection = document.createElement('section');
   subsection.className = 'subsection-one';
   subsection.innerHTML = `
@@ -104,7 +104,7 @@ for ( let i=0; i < 4; i += 1 ) {
     cat.className = `item-${index}`;
     cat.textContent = elem;
     ulList.appendChild(cat);
-    });
+  });
   firstSection.appendChild(ulList);
   firstSection.innerHTML += `<div class="paragraph">
     <h4>
@@ -153,7 +153,7 @@ seeMore.forEach((element, index) => {
     const ulList = document.createElement('ul');
     ulList.classList.add('list-items');
 
-  projectSection[index].category.forEach((elem, i) => {
+    projectSection[index].category.forEach((elem, i) => {
       const cat = document.createElement('li');
       cat.className = `item-${i}`;
       cat.textContent = elem;
