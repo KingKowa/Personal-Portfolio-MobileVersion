@@ -218,12 +218,12 @@ const userEmail = document.querySelector('.email-field');
 const formContainer = document.querySelector('#desk-contact');
 const form = document.querySelector('#sub-form');
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (userEmail.value !== (userEmail.value).toLowerCase()) {
+  event.preventDefault()
+  if (userEmail.value == (userEmail.value).toLowerCase()) {
     const disError = document.createElement('span');
     disError.className = 'errorMsg';
     disError.innerHTML = 'Your email must be in lowercase letters';
-    formContainer.appendChild(disError);
+    formContainer.appendChild(span);
   } else {
     form.submit();
   }
