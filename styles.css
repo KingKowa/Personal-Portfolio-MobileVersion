@@ -104,7 +104,7 @@ li {
   padding-left: 16px;
   padding-right: 16px;
   width: 343px;
-  height: fit-content;
+  height: max-content;
   position: relative;
 }
 
@@ -706,6 +706,11 @@ h3 {
     background-color: #fff;
   }
 
+  .details-modal {
+    height: auto;
+    width: 1440px;
+  }
+
   .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -784,7 +789,7 @@ h3 {
     margin-right: 22px;
     padding: 50px;
     width: 1156px;
-    height: fit-content;
+    height: auto;
     position: relative;
   }
 
