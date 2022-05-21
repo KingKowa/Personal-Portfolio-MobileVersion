@@ -215,6 +215,7 @@ seeMore.forEach((element, index) => {
 });
 
 const userEmail = document.querySelector('.email-field');
+const formContainer = document.querySelector('#desk-contact');
 const form = document.querySelector('#sub-form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -222,7 +223,7 @@ form.addEventListener('submit', (event) => {
     const disError = document.createElement('span');
     disError.className = 'errorMsg';
     disError.innerHTML = 'Your email must be in lowercase letters';
-    form.appendChild(disError);
+    formContainer.appendChild(disError);
   } else {
     form.submit();
   }
