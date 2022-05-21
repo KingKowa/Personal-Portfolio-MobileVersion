@@ -1003,6 +1003,7 @@ h3 {
   }
 
   .footer-section {
+    position: relative;
     font-family: Poppins, sans-serif;
     background-image: url("images-desk/contact-form-background-shapes@2x.svg");
     background-repeat: no-repeat;
@@ -1043,6 +1044,14 @@ h3 {
   .form-heading {
     color: #fff;
     font-size: 40px;
+  }
+
+  span {
+    position: absolute;
+    left: 35%;
+    bottom: 70px;
+    color: red;
+    font-size: 20px;
   }
 
   .form-paragraph {
