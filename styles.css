@@ -128,13 +128,13 @@ li {
   width: 100%;
 }
 
-.popup-bottom .pop-message {
-  width: 100%;
-}
-
 .pop-message {
   margin: 0;
   height: auto;
+}
+
+.popup-bottom .pop-message {
+  width: 100%;
 }
 
 .pop-tech {
@@ -262,6 +262,16 @@ h3 {
   border-radius: 2%;
 }
 
+.list-items li {
+  margin-left: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
 .list-items li:first-child {
   list-style: none;
   font-family: 'Poppins';
@@ -271,16 +281,6 @@ h3 {
   line-height: 24px;
   color: #344563;
   margin-left: 0;
-}
-
-.list-items li {
-  margin-left: 10px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #6b778c;
 }
 
 ::marker {
